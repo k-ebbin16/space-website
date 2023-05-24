@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300&family=Philosopher:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Oregon';
+    src:url('./starter-code/assets/FONTS/Fonts/oregon ldo.ttf')
+}
+
+* {
+    font-family: 'Barlow Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    color: #fff;
+}
+
+body {
+    background: no-repeat url(./starter-code/assets/home/background-home-desktop.jpg);
+    background-size: cover;
+}
+
+/*HEADER CSS*/
+
+.header-content {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-content > svg {
+    margin-left: 5%;
+}
+
+.header-content > .nav-content {
+    width: 55%;
+    height: 60%;
+    background-color: #55637d23;
+    backdrop-filter: blur(30px);
+}
+
+.header-content > .nav-content > ul {
+    height: 100%;
+    position: absolute;
+    left: 10%;
+    right: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.header-content > .nav-content > ul > li {
+    height: 100%;
+    letter-spacing: 3px;
+    font-size: 1.025rem;
+    display: flex;
+    align-items: center;
+}
+
+.header-content > .nav-content > ul > li:first-child {
+    border-bottom: 4px solid #fff;
+}
+
+.header-content > .nav-content > ul > li:hover {
+    cursor: pointer;
+}
+
+.header-content > .nav-content > ul > li > span {
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.line {
+    width: 35%;
+    height: 3px;
+    position: absolute;
+    left: calc(48px + 10%);
+    background-color: #252733;
+    z-index: 1;
+}
+
+
+
+/* TEXT AREA CSS */
+
+.text-area {
+    position: absolute;
+    bottom: 19%;
+    left: 10%;
+    max-width: 23.7%;
+}
+
+.text-area > h1 {
+    font-family: 'Oregon', sans-serif;
+    font-weight: 100;
+    font-size: 7rem;
+    letter-spacing: 10px;
+    text-align: center;
+    max-width: 60%;
+}
+
+.text-area > p {
+    font-size: 1.2rem;
+    line-height: 30px;
+    margin-top: 30px;
+}
+
+.text-area > h2 {
+    font-size: 1.5rem;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+
+/* CIRCLE SECTIOM */
+
+.circle-section {
+    position: absolute;
+    bottom: 12%;
+    right: 11%;
+    width: 30vh;
+    height: 30vh;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-section > h1 {
+    color: #000;
+    font-family: 'Oregon', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    font-weight: 200;
+}
